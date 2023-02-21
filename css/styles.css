@@ -1,0 +1,123 @@
+
+.bars {
+    height: 100vh;
+    display: grid;
+    row-gap: 6px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.sideBar {
+    background-color:blueviolet;
+    grid-row: span 5;
+    border-right: 3px solid black       ;
+}
+
+.topBar {
+    background-color: lightgrey;
+    grid-column: 2 / span 4;
+    grid-row: 1;
+}
+
+.content {
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
+}
+
+
+.sideContent {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.sideContent .select:hover {
+    scale: 1.01;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.globalAction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.topBar {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.top {
+    grid-column: 1;
+    grid-row: 1;
+}
+.top {
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile {
+    display: flex;
+    margin-left: 300px;
+    grid-column: 2;
+    grid-row: 1;
+}
+.info {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+.info button{
+    background: darkgrey;
+    border-radius: 30px;
+    width: 80px;
+    height: 35px;
+    border: 0;
+    text-align: center
+}
+.info button:hover {
+    opacity: 0.9;
+    scale: 1.02;
+}
+.info button:active {
+    background: grey;
+}
+
+.greet , .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greet {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.greeting {
+    margin-top: 20pxgit ;
+}
+
+.top input{
+    width: 800px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
